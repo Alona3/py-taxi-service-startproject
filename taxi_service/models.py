@@ -20,7 +20,7 @@ class Car(models.Model):
         return self.model
 
 class Driver(AbstractUser):
-    license_plate = models.CharField(max_length=20, unique=True)
+    license_number = models.CharField(max_length=20, unique=True)
 
     def __str__(self):
         return self.username
